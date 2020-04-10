@@ -4,10 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-      
-
-    </style>
 </head>
 <body>
     <table width=800>
@@ -18,11 +14,16 @@
         </tr>
         <tr>
             <td width=150 height=50>아이디</td>
-            <td><input type="text" placeholder="4자리 이상" style="height: 30px;"> <button style="height: 35px; color: white; background-color: #00AFA0;">아이디중복확인</button></td>
+            <td><input type="text" placeholder="4자리 이상" style="height: 30px;"> 
+                <button style="height: 35px; color: white; background-color: #00AFA0;">아이디중복확인</button>
+                <span style=" font-size: 10px; color: red;">아이디 형식에 맞춰주세요(영문,숫자,포함 4문자 이상)</span>
+            </td>
         </tr>
         <tr>
             <td width=150 height=50>비밀번호</td>
-            <td><input type="password" style="height: 30px;"></td>
+            <td><input type="password" style="height: 30px;">
+                <span style=" font-size: 10px; color: gray;">8~20자리의 영문,숫자,조합(영문,숫자,특수기호 조합을 권장합니다)</span>
+            </td>
         </tr>
         <tr>
             <td width=150 height=50>비밀번호확인</td>
@@ -44,16 +45,16 @@
             <td width=150 height=50 rowspan="2">이메일</td>
             <td><input type="text" style="height: 30px;"> @ <input type="text" style="height: 30px;"> 
                 <select style="height: 30px;">
-                    <option>naver</option>
-                    <option>hanmail</option>
-                    <option>nate</option>
-                    <option>yahoo</option>
+                    <option>naver.com</option>
+                    <option>hanmail.com</option>
+                    <option>nate.com</option>
+                    <option>yahoo.com</option>
                 </select>
             </td>
         </tr>
         <tr>
-            <td style="font-size: 5px;" width=150>이메일 수신동의시 신상품/할인헤택/이벤트 등의 정보를 받아보실수 있습니다 <br>
-                        수신동의 거부 시에도 기본서비스(주문배송 메일)는 발송됩니다.
+            <td style="font-size: 5px;" width=150> <span style="color: gray;">이메일 수신동의시 신상품/할인헤택/이벤트 등의 정보를 받아보실수 있습니다 <br>
+                        수신동의 거부 시에도 기본서비스(주문배송 메일)는 발송됩니다.</span>
                         <input type="radio">예 <input type="radio">아니오
             </td>
         </tr>
@@ -63,8 +64,8 @@
                 - <input type="text" style="width: 70px; height: 30px;"> </td>
         </tr>
         <tr>
-            <td style="font-size: 5px;" width=150>할인헤택과 이벤트 등의 소식 안내를 SMS로 받으실 수 있습니다. <br/>
-                        수신동의 거부 시에도 기본서비스는 발송됩니다. <input type="radio">예 <input type="radio">아니오
+            <td style="font-size: 5px;" width=150><span style="color: gray;"> 할인헤택과 이벤트 등의 소식 안내를 SMS로 받으실 수 있습니다. <br/>
+                        수신동의 거부 시에도 기본서비스는 발송됩니다.</span> <input type="radio">예 <input type="radio">아니오
             </td>
         </tr>
     </table>
@@ -81,12 +82,15 @@
         </tr>
         <tr>
             <td width=270 height=50>일반전화</td>
-            <td><input  type="text" style="width: 70px; height: 30px;"> - <input type="text" style="width: 70px; height: 30px;"> 
-                - <input type="text" style="width: 70px; height: 30px;"></td>
+            <td><input  type="text" style="width: 70px; height: 30px;">
+                 - <input type="text" style="width: 70px; height: 30px;"> 
+                 - <input type="text" style="width: 70px; height: 30px;">
+            </td>
         </tr>
         <tr>
             <td rowspan="2" width=150 height=50>주소</td>
-            <td><input type="text" style="height: 30px;"> <button style="height: 35px; color: white; background-color: #00AFA0;">우편번호검색</button> </td>
+            <td><input type="text" style="height: 30px;"> 
+                <button style="height: 35px; color: white; background-color: #00AFA0;">우편번호검색</button> </td>
         </tr>
         <tr>
             <td><input type="text" style="height: 30px;"> <input type="text" style="height: 30px;" placeholder="상세주소" ></td>
@@ -162,6 +166,7 @@
             </td>
         </tr>
     </table>
+    <button style="margin-top: 20px; margin-left: 350px; height: 35px; color: white; background-color: #00AFA0;">회원가입하기</button>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </body>
 </html>
